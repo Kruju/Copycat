@@ -2,41 +2,43 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sample Website</title>
+    <title>My Personal Website</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;600&family=Lusitana:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showSection('home')">Home</a></li>
+                <li><a href="#" onclick="showSection('writings')">Writings</a></li>
+                <li><a href="#" onclick="showSection('me')">Me</a></li>
+            </ul>
+        </nav>
+    </header>
     
-    <!-- Hero Section -->
-    <section id="hero">
-        <div class="overlay">
-            <h1>Welcome to Our Website</h1>
-            <p>Creating solutions for the future, today.</p>
-        </div>
-    </section>
-    
-    <!-- Main Content Section -->
-    <section>
-        <h1>About Our Company</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque convallis est vitae enim vehicula, eget placerat lectus dapibus. Aenean sit amet magna non erat aliquet feugiat. Curabitur nec justo sit amet libero ullamcorper aliquam vel non quam. Nulla facilisi.</p>
-        <img src="https://via.placeholder.com/800x400" alt="Placeholder Image">
-        <p>Fusce fermentum massa et nulla faucibus, nec fermentum elit viverra. In a nulla velit. Nulla vehicula lorem nec quam placerat, ac fermentum lectus ullamcorper.</p>
-    </section>
+    <main>
+        <section id="home" class="section active">
+            <h1>Welcome to My Space</h1>
+            <p>This is where I share my thoughts, stories, and creative work.</p>
+        </section>
+        
+        <section id="writings" class="section">
+            <h1>My Writings</h1>
+            <p>Explore my latest articles, stories, and more.</p>
+        </section>
+        
+        <section id="me" class="section">
+            <h1>About Me</h1>
+            <p>Learn more about my journey, inspirations, and passions.</p>
+        </section>
+    </main>
 
-    <!-- More Information Section -->
-    <section>
-        <h1>Our Vision</h1>
-        <p>Suspendisse potenti. Vivamus auctor magna ac diam sagittis, id sollicitudin sapien ornare. Cras et nisi sit amet sapien sollicitudin mollis.</p>
-        <img src="https://via.placeholder.com/800x400" alt="Vision Image">
-    </section>
-
-    <!-- Footer Section -->
     <footer>
-        <p>&copy; 2024 Sample Company. All rights reserved.</p>
-        <a href="https://www.example.com">Visit Our Website</a>
+        <p>&copy; 2024 My Personal Website</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
